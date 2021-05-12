@@ -41,56 +41,56 @@ int_D(0) <= (int_load AND i_F(0)) OR (int_shift AND int_F(1)) OR (int_clear AND 
 
 bit7: enArDFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(7),
+		   i_d => i_D(7),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(7));
 
 bit6: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(6),
+		   i_d => i_F(6),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(6));
 
 bit5: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(5),
+		   i_d => i_F(5),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(5));
 
 bit4: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(4),
+		   i_d => i_F(4),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(4));
 
 bit3: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(3),
+		   i_d => i_F(3),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(3));
 
 bit2: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(2),
+		   i_d => i_F(2),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(2));
 
 bit1: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(1),
+		   i_d => i_F(1),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(1));
 
 bit0: enARdFF_2
 	PORT MAP ( i_resetBar => i_GReset,
-		   i_d => int_D(0),
+		   i_d => i_F(0),
 		   i_enable => '1',
 		   i_clock => i_clock,
 		   o_q => int_F(0));

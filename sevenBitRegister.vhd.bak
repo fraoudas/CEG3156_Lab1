@@ -70,6 +70,5 @@ bit0: enARdFF_2
 		   i_enable => i_load,
 		   i_clock => i_clock,
 		   o_q => int_E(0));
-	--Output Drivers
-	o_E <= int_E;
+
 END rtl;

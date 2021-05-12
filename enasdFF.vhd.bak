@@ -28,16 +28,16 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
-ENTITY enARdFF_2 IS
+ENTITY enASdFF IS
 	PORT(
 		i_resetBar	: IN	STD_LOGIC;
 		i_d		: IN	STD_LOGIC;
 		i_enable	: IN	STD_LOGIC;
 		i_clock		: IN	STD_LOGIC;
 		o_q, o_qBar	: OUT	STD_LOGIC);
-END enARdFF_2;
+END enASdFF;
 
-ARCHITECTURE rtl OF enARdFF_2 IS
+ARCHITECTURE rtl OF enASdFF IS
 	SIGNAL int_q : STD_LOGIC;
 
 BEGIN
