@@ -1,10 +1,14 @@
-# TODO now
-* ASM diagrams / pseudocode
-* Implement eight bit adder
-* Implement registers
-
-# TODO later
-* Implement fpAdder, control logic, datapath
-
-# TODO later later
-* Implement fpMultiplier
+# Components 
+- [x] 7-bit register
+- [x] 7-bit complementer
+- [x] 8-bit adder for exponents
+- [x] 7-bit 2x1 MUX
+- [x] 7-bit comparator
+- [x] 7-bit down counter
+- [x] 7-bit up counter
+- [x] SR-latch
+- [x] 9-bit shift register
+- [x] 9-bit adder for mantissas
+- [ ] floating-point adder
+- [ ] floating-point multiplier
+- more components to be added 

@@ -6,7 +6,7 @@ ENTITY sevenBitRegister IS
 		i_GReset	: IN	STD_LOGIC;
 		i_clock 	: IN	STD_LOGIC;
 		i_E		: IN	STD_LOGIC_VECTOR(6 downto 0);
-		i_load  	: IN	STD_LOGIC;
+		i_load 		: IN	STD_LOGIC;
 		o_E		: OUT	STD_LOGIC_VECTOR(6 downto 0));
 END sevenBitRegister;
 

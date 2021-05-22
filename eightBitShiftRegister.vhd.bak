@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY eightBitShiftRegister IS
+	PORT ( 
+		i_resetBar, i_load, i_clear	: IN	STD_LOGIC;
+		i_A				: IN	STD_LOGIC_VECTOR(7 downto 0);
+		o_q				: OUT	STD_LOGIC_VECTOR(8 downto 0));
+END eightBitShiftRegister;
+
+ARCHITECTURE rtl OF eightBitShiftRegister IS
+SIGNAL int_enable : STD_LOGIC;
+SIGNAL int_q : STD_LOGIC_VECTOR(8 downto 0);
+END rtl;
