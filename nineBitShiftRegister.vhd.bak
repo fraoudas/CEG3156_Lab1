@@ -36,10 +36,10 @@ SIGNAL int_A, int_B, int_C, int_d, int_q : STD_LOGIC_VECTOR(8 downto 0);
 BEGIN
 int_enable <= i_shift XOR i_load XOR i_clear;
 
-int_d <= ((i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load) AND ('1' & i_A)) OR
+int_d <= ((i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load) AND (i_msb & i_A)) OR
 		((i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift) AND 
 		('0' & int_q(8) & int_q(7) & int_q(6) & int_q(5) & int_q(4) & int_q(3) & int_q(2) & int_q(1))) OR
-		(i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear) AND "000000000");
+		((i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear) AND "000000000");
 
 bit8: enARdFF_2
 	PORT MAP( i_resetBar => i_resetBar,

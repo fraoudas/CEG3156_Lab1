@@ -5,6 +5,7 @@ ENTITY nineBitShiftRegister IS
 	PORT ( 
 		i_resetBar, i_clock 			: IN 	STD_LOGIC;	 
 		i_load, i_clear, i_shift		: IN	STD_LOGIC;
+		i_msb					: IN	STD_LOGIC;
 		i_A					: IN	STD_LOGIC_VECTOR(7 downto 0);
 		o_q					: OUT	STD_LOGIC_VECTOR(8 downto 0));
 END nineBitShiftRegister;
@@ -36,7 +37,7 @@ SIGNAL int_A, int_B, int_C, int_d, int_q : STD_LOGIC_VECTOR(8 downto 0);
 BEGIN
 int_enable <= i_shift XOR i_load XOR i_clear;
 
-int_d <= ((i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load) AND ('1' & i_A)) OR
+int_d <= ((i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load & i_load) AND (i_msb & i_A)) OR
 		((i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift & i_shift) AND 
 		('0' & int_q(8) & int_q(7) & int_q(6) & int_q(5) & int_q(4) & int_q(3) & int_q(2) & int_q(1))) OR
 		((i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear & i_clear) AND "000000000");

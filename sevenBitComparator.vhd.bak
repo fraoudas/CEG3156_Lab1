@@ -41,7 +41,7 @@ ARCHITECTURE rtl OF sevenBitComparator IS
 	COMPONENT oneBitComparator
 	PORT(
 		i_GTPrevious, i_LTPrevious	: IN	STD_LOGIC;
-		i_A, i_B			: IN	STD_LOGIC;
+		i_Ai, i_Bi			: IN	STD_LOGIC;
 		o_GT, o_LT			: OUT	STD_LOGIC);
 	END COMPONENT;
 

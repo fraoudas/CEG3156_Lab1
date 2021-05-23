@@ -130,6 +130,7 @@ s9: enARdFF_2
 	o_shiftR4 <= int_state(4);
 	o_clear3 <= int_state(5);
 	o_shiftR3 <= int_state(6);
+	o_countD6 <= int_state(6);
 	o_load5 <= int_state(7);
 	o_load7 <= int_state(7);
 	o_shiftR5 <= int_state(8);
