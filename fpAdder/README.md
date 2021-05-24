@@ -1,15 +1,15 @@
 # Components Tested and Working
 
-- [x] eightBitAdder
-- [x] eightBitComplementer 
-- [x] enardFF_2
-- [x] enasdFF
+- ✓ eightBitAdder
+- ✓ eightBitComplementer 
+- ✓ enardFF_2
+- ✓ enasdFF
 - [ ] fpAdder
-- [x] fpAdderControl
-- [x] nineBitAdder 
-- [x] nineBitShiftRegister
-- [x] sevenBit2x1MUX
-- [x] sevenBitComparator
-- [x] sevenBitDownCounter
-- [x] sevenBitRegister
-- [x] srlatch
+- ✓ fpAdderControl
+- ✓ nineBitAdder 
+- ✓ nineBitShiftRegister
+- ✓ sevenBit2x1MUX
+- ✓ sevenBitComparator
+- ✓ sevenBitDownCounter
+- ✓ sevenBitRegister
+- ✓ srlatch
