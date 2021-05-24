@@ -1,4 +1,4 @@
-D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitShiftRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\nineBitShiftRegister.vhd}
+D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitShiftRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitShiftRegister.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,7 +14,7 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity sevenBitUpCounter
 -- Compiling architecture rtl of sevenBitUpcounter
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBit2x1MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\sevenBit2x1MUX.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBit2x1MUX.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBit2x1MUX.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -38,7 +38,7 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity oneBitComparator
 -- Compiling architecture rtl of oneBitComparator
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComplementer.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\sevenBitComplementer.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComplementer.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComplementer.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -54,7 +54,7 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity oneBitFullAdder
 -- Compiling architecture struct of oneBitFullAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\sevenBitRegister.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitRegister.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -78,23 +78,7 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity fpAdder
 -- Compiling architecture rtl of fpAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/fpAdderControl.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\fpAdderControl.vhd}
-Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity fpAdderControl
--- Compiling architecture rtl of fpAdderControl
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enardFF_2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\enardFF_2.vhd}
-Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity enARdFF_2
--- Compiling architecture rtl of enARdFF_2
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enasdFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\enasdFF.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enasdFF.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enasdFF.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -102,23 +86,15 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity enASdFF
 -- Compiling architecture rtl of enASdFF
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComparator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\sevenBitComparator.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enardFF_2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/enardFF_2.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity sevenBitComparator
--- Compiling architecture rtl of sevenBitComparator
+-- Compiling entity enARdFF_2
+-- Compiling architecture rtl of enARdFF_2
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/eightBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\eightBitAdder.vhd}
-Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity eightBitAdder
--- Compiling architecture struct of eightBitAdder
-
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitDownCounter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\sevenBitDownCounter.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitDownCounter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitDownCounter.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -126,20 +102,36 @@ Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling entity sevenBitDownCounter
 -- Compiling architecture rtl of sevenBitDowncounter
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\nineBitAdder.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/eightBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/eightBitAdder.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity nineBitAdder
--- Compiling architecture struct of nineBitAdder
+-- Compiling entity eightBitAdder
+-- Compiling architecture struct of eightBitAdder
 
-} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/srlatch.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:\Users\Fernando\Desktop\School\CEG3156\Labs\CEG3156_Lab1\srlatch.vhd}
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComparator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/sevenBitComparator.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity sevenBitComparator
+-- Compiling architecture rtl of sevenBitComparator
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/srlatch.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/srlatch.vhd
 Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity srLatch
 -- Compiling architecture rtl of srLatch
+
+} {} {}} D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/Users/Fernando/Desktop/School/CEG3156/Labs/CEG3156_Lab1/nineBitAdder.vhd
+Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nineBitAdder
+-- Compiling architecture struct of nineBitAdder
 
 } {} {}}

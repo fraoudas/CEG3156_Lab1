@@ -9,7 +9,8 @@ ENTITY fpAdderControl IS
 		o_load5, o_load7, o_load6, o_cin	: OUT 	STD_LOGIC;
 		o_on22, o_on21, o_flag0, o_flag1	: OUT	STD_LOGIC;
 		o_clear4, o_clear3, o_shiftR4, o_shiftR3: OUT	STD_LOGIC;
-		o_countD6, o_countU7, o_shiftR5, o_done	: OUT	STD_LOGIC);
+		o_countD6, o_countU7, o_shiftR5, o_done	: OUT	STD_LOGIC;
+		o_state					: OUT	STD_LOGIC_VECTOR(0 to 9));
 END fpAdderControl;
 
 ARCHITECTURE rtl of fpAdderControl IS
@@ -43,7 +44,7 @@ int_d(3) <= int_state(1) AND NOT(i_sign) AND i_notLess9;
 int_d(4) <= (int_state(1) AND NOT(i_sign) AND NOT(i_notLess9) AND NOT(i_zero)) OR (int_state(4) AND NOT(i_zero));
 int_d(5) <= int_state(2) AND i_notLess9;
 int_d(6) <= (int_state(2) AND NOT(i_notLess9) AND NOT(i_zero)) OR (int_state(6) AND NOT(i_zero));
-int_d(7) <= int_state(3) OR (int_state(4) AND i_zero) OR (int_state(2) AND NOT(i_notLess9) AND i_zero) OR (int_state(1) AND NOT(i_notLess9) AND i_zero) OR int_state(5);
+int_d(7) <= int_state(3) OR (int_state(4) AND i_zero) OR (int_state(2) AND NOT(i_notLess9) AND i_zero) OR (int_state(1) AND NOT(i_sign) AND NOT(i_notLess9) AND i_zero) OR int_state(5) OR (int_state(6) AND i_zero);
 int_d(8) <= int_state(7) AND i_coutFz;
 int_d(9) <= int_state(8) OR int_state(9) OR (int_state(7) AND NOT(i_coutFz));
 
@@ -118,6 +119,7 @@ s9: enARdFF_2
 			o_q => int_state(9));
 
 	--Output drivers
+	o_state <= int_state;
 	o_load1 <= int_state(0);
 	o_load2 <= int_state(0);
 	o_load3 <= int_state(0);
@@ -130,7 +132,6 @@ s9: enARdFF_2
 	o_shiftR4 <= int_state(4);
 	o_clear3 <= int_state(5);
 	o_shiftR3 <= int_state(6);
-	o_countD6 <= int_state(6);
 	o_load5 <= int_state(7);
 	o_load7 <= int_state(7);
 	o_shiftR5 <= int_state(8);

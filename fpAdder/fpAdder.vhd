@@ -99,7 +99,8 @@ COMPONENT fpAdderControl
 		o_load5, o_load7, o_load6, o_cin	: OUT 	STD_LOGIC;
 		o_on22, o_on21, o_flag0, o_flag1	: OUT	STD_LOGIC;
 		o_clear4, o_clear3, o_shiftR4, o_shiftR3: OUT	STD_LOGIC;
-		o_countD6, o_countU7, o_shiftR5, o_done	: OUT	STD_LOGIC);
+		o_countD6, o_countU7, o_shiftR5, o_done	: OUT	STD_LOGIC;
+		o_state					: OUT	STD_LOGIC_VECTOR(0 to 9));
 END COMPONENT;
 
 SIGNAL 		int_sign, int_notLess9, int_zero, int_coutFz		: 	STD_LOGIC;
@@ -108,6 +109,7 @@ SIGNAL		int_load5, int_load7, int_load6, int_cin		:  	STD_LOGIC;
 SIGNAL		int_on22, int_on21, int_flag0, int_flag1, int_clear5	: 	STD_LOGIC;
 SIGNAL 		int_clear4, int_clear3, int_shiftR4, int_shiftR3	: 	STD_LOGIC;
 SIGNAL 		int_countD6, int_countU7, int_shiftR5, int_done		: 	STD_LOGIC;
+SIGNAL int_state : STD_LOGIC_VECTOR(0 to 9);
 
 SIGNAL int_Ex, int_Ey			 :	STD_LOGIC_VECTOR(6 downto 0);
 SIGNAL int_xComplement, int_yComplement  :	STD_LOGIC_VECTOR(7 downto 0);
@@ -121,6 +123,8 @@ SIGNAL int_mantissaSum			 : 	STD_LOGIC_VECTOR(8 downto 0);
 SIGNAL int_RFz				 : 	STD_LOGIC_VECTOR(8 downto 0);
 
 BEGIN
+
+int_notLess9 <= int_GT AND NOT(int_EQ) AND NOT(int_LT);
 
 controller: fpAdderControl
 	PORT MAP (	i_GReset => GReset,
@@ -148,7 +152,8 @@ controller: fpAdderControl
 			o_countD6 => int_countD6,
 			o_countU7 => int_countU7,
 			o_shiftR5 => int_shiftR5,
-			o_done => int_done);
+			o_done => int_done,
+			o_state => int_state);
 Ex: sevenBitRegister
 	PORT MAP (	i_GReset => GReset,
 			i_clock => GClock,
@@ -246,7 +251,7 @@ normalizeRegister: nineBitShiftRegister
 
 	--Output Drivers
 	SignOut <= '0';
-	MantissaOut <= int_RFz;
+	MantissaOut <= int_RFz(7 downto 0);
 	ExponentOut <= int_Ez;
 	
 			
