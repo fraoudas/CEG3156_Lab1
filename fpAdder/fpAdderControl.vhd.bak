@@ -120,32 +120,22 @@ s9: enARdFF_2
 
 	--Output drivers
 	o_state <= int_state;
-
 	o_load1 <= int_state(0);
 	o_load2 <= int_state(0);
 	o_load3 <= int_state(0);
 	o_load4 <= int_state(0);
-
 	o_on22 <= int_state(1);
 	o_flag0 <= int_state(1);
-
 	o_on21 <= int_state(2);
 	o_flag1 <= int_state(2);
-
 	o_clear4 <= int_state(3);
-
 	o_shiftR4 <= int_state(4);
-
 	o_clear3 <= int_state(5);
-
 	o_shiftR3 <= int_state(6);
-
 	o_load5 <= int_state(7);
 	o_load7 <= int_state(7);
-
 	o_shiftR5 <= int_state(8);
 	o_countU7 <= int_state(8);
-
 	o_cin <= int_state(1) OR int_state(2);
 	o_load6 <= int_state(1) OR int_state(2);
 	o_countD6 <= int_state(4) OR int_state(6);

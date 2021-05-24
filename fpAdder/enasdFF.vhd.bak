@@ -8,7 +8,7 @@ USE ieee.std_logic_1164.ALL;
 
 ENTITY enasdFF is 
 	PORT(
-		i_resetBar : IN STD_LOGIC;
+		i_setBar : IN STD_LOGIC;
 		i_d	: IN STD_LOGIC;
 		i_clock : IN STD_LOGIC;
 		i_enable : IN STD_LOGIC; 
@@ -20,10 +20,10 @@ ARCHITECTURE rtl OF enasdFF IS
 BEGIN 
 
 oneBitRegister:
-PROCESS(i_clock, i_resetBar)
+PROCESS(i_clock, i_setBar)
 
 BEGIN 
-	IF (i_resetBar = '0') THEN
+	IF (i_setBar = '0') THEN
 		int_q <= '1'; 
 	ELSIF (i_clock'Event and i_clock = '1') THEN
 		IF (i_enable = '1') THEN

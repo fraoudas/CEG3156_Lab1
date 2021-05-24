@@ -169,8 +169,6 @@ int_EyComplementIn <= '0' & int_Ey;
 int_Fx <= '1' & MantissaA;
 int_Fy <= '1' & MantissaB;
 
-int_clear5 <= '0';
-
 controller: fpAdderControl
 	PORT MAP (	i_GReset => GReset,
 			i_GClock => GClock,

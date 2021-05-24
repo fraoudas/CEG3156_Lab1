@@ -95,5 +95,5 @@ bit0: enARdFF_2
 		  o_q => int_q(0));
 
 	--Output driver
-	o_q <= int_q;
+	o_q <= int_d WHEN (i_load = '1') ELSE int_q;
 END rtl;

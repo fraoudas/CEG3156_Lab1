@@ -33,14 +33,14 @@ comp6: oneBitComparator
 
 comp5: oneBitComparator
 	PORT MAP (i_GTPrevious => int_GT(6), 
-	          i_LTPrevious => int_LT(6),
+	          i_LTPrevious => int_GT(6),
 			  i_Ai => i_Ai(5),
 			  i_Bi => i_Bi(5),
 			  o_GT => int_GT(5),
 			  o_LT => int_LT(5));
 comp4: oneBitComparator
 	PORT MAP (i_GTPrevious => int_GT(5), 
-	          i_LTPrevious => int_LT(5),
+	          i_LTPrevious => int_GT(5),
 			  i_Ai => i_Ai(4),
 			  i_Bi => i_Bi(4),
 			  o_GT => int_GT(4),
@@ -48,7 +48,7 @@ comp4: oneBitComparator
 
 comp3: oneBitComparator
 	PORT MAP (i_GTPrevious => int_GT(4), 
-	          i_LTPrevious => int_LT(4),
+	          i_LTPrevious => int_GT(4),
 			  i_Ai => i_Ai(3),
 			  i_Bi => i_Bi(3),
 			  o_GT => int_GT(3),
@@ -56,7 +56,7 @@ comp3: oneBitComparator
 		
 comp2: oneBitComparator
 	PORT MAP (i_GTPrevious => int_GT(3), 
-	          i_LTPrevious => int_LT(3),
+	          i_LTPrevious => int_GT(3),
 			  i_Ai => i_Ai(2),
 			  i_Bi => i_Bi(2),
 			  o_GT => int_GT(2),

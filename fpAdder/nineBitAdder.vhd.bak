@@ -99,63 +99,63 @@ adder0: oneBitFullAdder
 q8: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(8),
+			i_d => o_s(8),
 			i_enable => '1',
 			o_q => o_q(8));
 
 q7: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(7),
+			i_d => o_s(7),
 			i_enable => '1',
 			o_q => o_q(7));
 
 q6: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(6),
+			i_d => o_s(6),
 			i_enable => '1',
 			o_q => o_q(6));
 
 q5: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(5),
+			i_d => o_s(5),
 			i_enable => '1',
 			o_q => o_q(5));
 
 q4: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(4),
+			i_d => o_s(4),
 			i_enable => '1',
 			o_q => o_q(4));
 
 q3: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(3),
+			i_d => o_s(3),
 			i_enable => '1',
 			o_q => o_q(3));
 
 q2: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(2),
+			i_d => o_s(2),
 			i_enable => '1',
 			o_q => o_q(2));
 
 q1: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(1),
+			i_d => o_s(1),
 			i_enable => '1',
 			o_q => o_q(1));
 
 q0: enARdFF_2
 	PORT MAP (	i_resetBar => i_resetBar,
 			i_clock => i_clock,
-			i_d => int_s(0),
+			i_d => o_s(0),
 			i_enable => '1',
 			o_q => o_q(0));
 
