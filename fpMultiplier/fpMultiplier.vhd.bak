@@ -187,7 +187,7 @@ Fz: nineBitShiftRegister
 			o_q => int_RFz);
 
 	--Output Drivers
-	Overflow <= (int_state(2) OR int_state(3)) AND (int_Esum(8) OR int_Esum(7));
+	Overflow <= int_state(3) AND (int_Esum(8) OR int_Esum(7));
 	SignOut <= SignA XOR SignB;
 	MantissaOut <= int_RFz(7 downto 0);
 	ExponentOut <= int_REz;

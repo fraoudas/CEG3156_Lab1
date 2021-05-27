@@ -302,7 +302,11 @@ normalizeRegister: nineBitShiftRegister
 			o_q => int_RFz);
 
 	--Output Drivers
-	SignOut <= '0';
+	SignOut <= SignA WHEN (ExponentA > ExponentB) ELSE
+		   SignB WHEN (ExponentB > ExponentA) ELSE
+		   SignA WHEN (MantissaA > MantissaB) ELSE
+		   SignB WHEN (MantissaB > MantissaA) ELSE
+		   SignA;
 	MantissaOut <= int_RFz(7 downto 0);
 	ExponentOut <= int_REz;
 	
